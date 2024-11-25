@@ -1,0 +1,27 @@
+﻿string s1 = "Hello, World";
+string s2 = "Hello, World!";
+string s3 = "hello, world";
+string s4 = "Hello";
+string s5 = "World";
+string s6 = "Hello, World";
+
+Console.WriteLine($"Сравнение(Compare) \"Hello, World\" и  \"Hello, World!\": {String.Compare(s1, s2)}");
+Console.WriteLine($"Сравнение(Compare) \"Hello, World\" и  \"hello, world\": {String.Compare(s1, s3)}");
+Console.WriteLine(" ");
+Console.WriteLine($"Сравнение(Equals) \"Hello, World\" и  \"Hello\": {String.Equals(s1, s4)}");
+Console.WriteLine($"Сравнение(Equals) \"Hello, World\" и  \"Hello, World\": {String.Equals(s1, s6)}");
+Console.WriteLine(" ");
+Console.WriteLine($"Сравнение(CompareOrdinal) \"Hello\" и  \"World\": {String.CompareOrdinal(s4, s5)}");
+Console.WriteLine($"Сравнение(CompareOrdinal) \"Hello, World\" и  \"Hello, World\": {String.CompareOrdinal(s1, s6)}");
+Console.WriteLine(" ");
+Console.WriteLine($"Поиск(IndexOf) \"P\" в \"Hello, World\": {s1.IndexOf("P")}");
+Console.WriteLine($"Поиск(IndexOf) \"d\" в \"World\": {s5.IndexOf("d")}");
+Console.WriteLine($"Поиск(IndexOf) \"e\" в \"Hello\": {s6.IndexOf("e")}");
+Console.WriteLine(" ");
+Console.WriteLine($"Поиск(Contains) \"Hello\" в \"Hello, World\": {s1.Contains(s4)}");
+Console.WriteLine($"Поиск(Contains) \"Hello, World\" в \"Hello\": {s4.Contains(s1)}");
+Console.WriteLine(" ");
+Console.WriteLine($"\"Hello\"==\"World\": {s4==s5}");
+Console.WriteLine($"\"Hello\"!=\"World\": {s4 != s5}");
+Console.WriteLine($"\"Hello, World\"==\"hello, world\": {s1 == s3}");
+Console.WriteLine($"\"Hello, World\"==\"Hello, World\": {s1 == s6}");
